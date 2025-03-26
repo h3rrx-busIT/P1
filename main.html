@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Employment Form</h1>
+    <p id="description">Thank you for taking the time to fill in this survery</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+        
+        <label id="email-label" for="email">Email Address</label>
+        <input id="email" type="email" placeholder="Enter your email address" required>
+        
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="18" max="100" placeholder="Enter your age">
+        
+        <label for="dropdown">Which option best describes your role?</label>
+        <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Employed Full-time</option>
+            <option value="2">Employed Part-time</option>
+            <option value="3">Self-Employed</option>
+            <option value="4">Other</option>
+        </select>
+        
+        <fieldset>
+            <legend>Would you consider a position at another company?</legend>
+            <label><input type="radio" name="position" value="yes"> Yes</label>
+            <label><input type="radio" name="position" value="no"> No</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>What industry are you in?</legend>
+            <label><input id="cb" type="checkbox" value="1"> Finance</label>
+            <label><input id="cb" type="checkbox" value="2"> Manufacture</label>
+            <label><input id="cb" type="checkbox" value="3"> Agriculture</label>
+            <label><input id="cb" type="checkbox" value="4"> Artisan</label>
+            <label><input id="cb" type="checkbox" value="5"> Healthcare</label>
+            <label><input id="cb" type="checkbox" value="6"> Education</label>
+            <label><input id="cb" type="checkbox" value="7"> Hospitality</label>
+            <label><input id="cb" type="checkbox" value="8"> Aerospace</label>
+            <label><input id="cb" type="checkbox" value="9"> Retail</label>
+            <label><input id="cb" type="checkbox" value="10"> Telecommunications</label>
+        </fieldset>
+        
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+        
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
